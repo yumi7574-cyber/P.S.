@@ -227,17 +227,18 @@
           overflow-x: auto;
           white-space: nowrap;
           display: flex;
-          justify-content: center;
+          justify-content: flex-start;
      }
 
      .main-nav-ul {
           font-size: 14px;
           list-style: none;
           display: flex;
-          justify-content: center;
+          justify-content: flex-start;
           margin: 0;
           min-width: 0;
           gap: 20px;
+          padding: 0;
           min-width: 0;
           border-top: 1px solid #EAEDEF;
           border-bottom: 1px solid #EAEDEF;
@@ -261,4 +262,6 @@
           margin-right: 16px;
      }
 
+
 }
+
