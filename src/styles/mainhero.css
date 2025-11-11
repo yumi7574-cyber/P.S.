@@ -32,12 +32,14 @@ main {
      object-fit: cover;
      border-radius: 5px;
 }
-.hero-wrapper{
+
+.hero-wrapper {
      position: relative;
      width: 900px;
      min-width: 900px;
      margin: auto;
 }
+
 .hero-slider {
      height: 508px;
      border-radius: 5px;
@@ -52,7 +54,7 @@ main {
      display: flex;
      width: calc(100% * 4);
      height: 100%;
-     transition: transform 1.2s ease;
+     transition: transform 0.7s ease;
 }
 
 .herosliderimg {
@@ -69,10 +71,11 @@ main {
      border-radius: 5px;
 }
 
-.sign-button-img{
+.sign-button-img {
      width: 70px;
      height: 70px;
 }
+
 .hero-pre-button,
 .hero-next-button {
      position: absolute;
@@ -85,17 +88,95 @@ main {
      cursor: pointer;
      pointer-events: none;
 }
-.hero-pre-button{
+
+.hero-pre-button {
      left: -35px;
 }
-.hero-next-button{
+
+.hero-next-button {
      right: -35px;
 }
-.hero-wrapper:hover .hero-pre-button{
+
+.hero-wrapper:hover .hero-pre-button {
      opacity: 1;
      pointer-events: auto;
 }
-.hero-wrapper:hover .hero-next-button{
+
+.hero-wrapper:hover .hero-next-button {
      opacity: 1;
      pointer-events: auto;
+}
+
+.mobile-hero {
+     display: none;
+     width: 358px;
+     height: 102px;
+}
+
+.mobile-hero-wrapper {
+     position: relative;
+     width: auto;
+     min-width: 390px;
+     margin: auto;
+}
+
+.mobile-hero-slider {
+     height: 102px;
+     width: 358px;
+     border-radius: 5px;
+     display: flex;
+     justify-content: center;
+     overflow: hidden;
+}
+
+
+.mobile-slider-track {
+     display: flex;
+     width: calc(100% * 4);
+     height: 100%;
+     transition: transform 0.7s ease;
+}
+
+.mobile-herosliderimg {
+     flex: 0 0 100%;
+     height: 100%;
+
+}
+
+.mobile-herosliderimg img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: block;
+     border-radius: 5px;
+}
+
+@media screen and (max-width:390px) {
+     main {
+          width: 100%;
+          max-width: 390px;
+          height: 100%;
+          margin: auto;
+          padding: 30px 0 100px 0;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          box-sizing: border-box;
+     }
+
+     .hero {
+          display: none;
+          
+     }
+
+     .mobile-hero {
+          display: flex;
+          padding: 0 16px;
+          
+     }
+
+     .mobile-hero-wrapper {
+          width: 100%;
+          max-width: 390px;
+     }
 }

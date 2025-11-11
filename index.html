@@ -41,17 +41,28 @@
 <body>
      <div class="headertop">
           <a href="#" class="headertop-text">지금 바로 앱 다운로드하고 즐거운 취향기록을 시작해보세요 !</a>
+          <a href="#" class="headertop-text-mobile">앱 다운로드하고 더 편하게 보기</a>
           <button class="headertop-btn"><img src="/src/assets/images/icons/닫기.png" alt="닫기아이콘"
                     class="close-icon"></button>
      </div>
      <header class="header">
-          <a href="index.html" class="logo"><img src="/src/assets/images/logo/ps로고.png" alt="로고" class="logo-icon"></a>
+          <div class="mobile-menu-wrapper">
+               <button class="menu-icon"><img src="/src/assets/images/icons/모바일메뉴바.png" alt="메뉴"
+                         class="mobile-menu-icon"></button>
+               <a href="index.html" class="logo"><img src="/src/assets/images/logo/ps로고.png" alt="로고"
+                         class="logo-icon"></a>
+          </div>
+
           <div class="top-search-wrapper">
                <img src="/src/assets/images/icons/검색.png" alt="검색아이콘" class="search-icon">
                <input type="search" class="main-search-input" id="main-search-id" placeholder="통합검색">
           </div>
           <div class="top-menu-wrapper">
-               <a href="#"><img src="/src/assets/images/icons/장바구니.png" alt="장바구니아이콘" class="cart-icon"></a>
+               <div class="mobile-icon-wrapper">
+                    <a href="#"><img src="/src/assets/images/icons/모바일검색.png" alt="검색아이콘" class="mobile-search-icon"></a>
+                    <a href="#"><img src="/src/assets/images/icons/장바구니.png" alt="장바구니아이콘" class="cart-icon"></a>
+               </div>
+
                <div class="top-cta-wrapper">
                     <a href="#">로그인 /</a>
                     <a href="#">회원가입</a>
@@ -101,9 +112,25 @@
                     <button type="button" class="hero-next-button"><img src="/src/assets/images/icons/다음버튼.png"
                               alt="다음버튼" class="sign-button-img"></button>
                </div>
-
-
-
+          </section>
+          <section class="mobile-hero">
+               <div class="mobile-hero-wrapper">
+                    <div class="mobile-hero-slider">
+                         <div class="mobile-slider-track">
+                              <a href="#" class="mobile-herosliderimg">
+                                   <img src="/src/assets/images/이미지모음/mainslide mobile/모바일배너-2.jpg" alt="모바일슬라이드1">
+                              </a>
+                              <a href="#" class="mobile-herosliderimg">
+                                   <img src="/src/assets/images/이미지모음/mainslide mobile/모바일배너-1.jpg" alt="모바일슬라이드2">
+                              </a>
+                              <a href="#" class="mobile-herosliderimg">
+                                   <img src="/src/assets/images/이미지모음/mainslide mobile/모바일배너-3.jpg" alt="모바일슬라이드3">
+                              </a>
+                              <a href="#" class="mobile-herosliderimg">
+                                   <img src="/src/assets/images/이미지모음/mainslide mobile/모바일배너-4.jpg" alt="모바일슬라이드4">
+                              </a>
+                         </div>
+                    </div>
           </section>
 
 
@@ -249,8 +276,10 @@
                          </li>
                     </ul>
                </div>
-               <button type="button" class="main-pre-button"><img src="/src/assets/images/icons/이전버튼.png" alt="이전버튼" class="sign-button-img"></button>
-               <button type="button" class="main-next-button"><img src="/src/assets/images/icons/다음버튼.png" alt="다음버튼" class="sign-button-img"></button>
+               <button type="button" class="main-pre-button"><img src="/src/assets/images/icons/이전버튼.png" alt="이전버튼"
+                         class="sign-button-img"></button>
+               <button type="button" class="main-next-button"><img src="/src/assets/images/icons/다음버튼.png" alt="다음버튼"
+                         class="sign-button-img"></button>
           </section>
 
 
@@ -267,131 +296,141 @@
 
                <div class="section2-wrapper">
                     <ul class="section2-ul-all">
-                    <li class="section2-slide">
-                         <div class="section2-slide-img-wrapper">
-                              <a href="#">
-                                   <img src="/src/assets/images/이미지모음/메인섹션2/다이어리.jpg" alt="상품사진1" class="section2-img">
-                              </a>
-                              <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
-                                        class="cart-icon2"></a>
-                         </div>
-                         <div class="section2-slide-text-wrapper">
-                              <div class="brand">P.S.</div>
-                              <div class="product">2026 다이어리</div>
-                              <div class="price">13,000</div>
-                         </div>
-                    </li>
+                         <li class="section2-slide">
+                              <div class="section2-slide-img-wrapper">
+                                   <a href="#">
+                                        <img src="/src/assets/images/이미지모음/메인섹션2/다이어리.jpg" alt="상품사진1"
+                                             class="section2-img">
+                                   </a>
+                                   <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
+                                             class="cart-icon2"></a>
+                              </div>
+                              <div class="section2-slide-text-wrapper">
+                                   <div class="brand">P.S.</div>
+                                   <div class="product">2026 다이어리</div>
+                                   <div class="price">13,000</div>
+                              </div>
+                         </li>
 
-                    <li class="section2-slide">
-                         <div class="section2-slide-img-wrapper">
-                              <a href="#">
-                                   <img src="/src/assets/images/이미지모음/메인섹션2/필통.jpg" alt="상품사진2" class="section2-img">
-                              </a>
-                              <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
-                                        class="cart-icon2"></a>
-                         </div>
-                         <div class="section2-slide-text-wrapper">
-                              <div class="brand">PENCIL</div>
-                              <div class="product">내구성 좋은 필통 케이스</div>
-                              <div class="price">16,000</div>
-                         </div>
-                    </li>
+                         <li class="section2-slide">
+                              <div class="section2-slide-img-wrapper">
+                                   <a href="#">
+                                        <img src="/src/assets/images/이미지모음/메인섹션2/필통.jpg" alt="상품사진2"
+                                             class="section2-img">
+                                   </a>
+                                   <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
+                                             class="cart-icon2"></a>
+                              </div>
+                              <div class="section2-slide-text-wrapper">
+                                   <div class="brand">PENCIL</div>
+                                   <div class="product">내구성 좋은 필통 케이스</div>
+                                   <div class="price">16,000</div>
+                              </div>
+                         </li>
 
-                    <li class="section2-slide">
-                         <div class="section2-slide-img-wrapper">
-                              <a href="#">
-                                   <img src="/src/assets/images/이미지모음/메인섹션2/캘린더.jpg" alt="상품사진3" class="section2-img">
-                              </a>
-                              <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
-                                        class="cart-icon2"></a>
-                         </div>
-                         <div class="section2-slide-text-wrapper">
-                              <div class="brand">MUJI</div>
-                              <div class="product">2026 미니 캘린더</div>
-                              <div class="price">6,000</div>
-                         </div>
-                    </li>
+                         <li class="section2-slide">
+                              <div class="section2-slide-img-wrapper">
+                                   <a href="#">
+                                        <img src="/src/assets/images/이미지모음/메인섹션2/캘린더.jpg" alt="상품사진3"
+                                             class="section2-img">
+                                   </a>
+                                   <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
+                                             class="cart-icon2"></a>
+                              </div>
+                              <div class="section2-slide-text-wrapper">
+                                   <div class="brand">MUJI</div>
+                                   <div class="product">2026 미니 캘린더</div>
+                                   <div class="price">6,000</div>
+                              </div>
+                         </li>
 
-                    <li class="section2-slide">
-                         <div class="section2-slide-img-wrapper">
-                              <a href="#">
-                                   <img src="/src/assets/images/이미지모음/메인섹션2/편지지.jpg" alt="상품사진4" class="section2-img">
-                              </a>
-                              <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
-                                        class="cart-icon2"></a>
-                         </div>
-                         <div class="section2-slide-text-wrapper">
-                              <div class="brand">LETTER</div>
-                              <div class="product">마음전하기 좋은 깔끔 편지 SET</div>
-                              <div class="price">9,000</div>
-                         </div>
-                    </li>
+                         <li class="section2-slide">
+                              <div class="section2-slide-img-wrapper">
+                                   <a href="#">
+                                        <img src="/src/assets/images/이미지모음/메인섹션2/편지지.jpg" alt="상품사진4"
+                                             class="section2-img">
+                                   </a>
+                                   <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
+                                             class="cart-icon2"></a>
+                              </div>
+                              <div class="section2-slide-text-wrapper">
+                                   <div class="brand">LETTER</div>
+                                   <div class="product">마음전하기 좋은 깔끔 편지 SET</div>
+                                   <div class="price">9,000</div>
+                              </div>
+                         </li>
 
-                    <li class="section2-slide">
-                         <div class="section2-slide-img-wrapper">
-                              <a href="#">
-                                   <img src="/src/assets/images/이미지모음/메인섹션2/2바인더.jpg" alt="상품사진5" class="section2-img">
-                              </a>
-                              <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
-                                        class="cart-icon2"></a>
-                         </div>
-                         <div class="section2-slide-text-wrapper">
-                              <div class="brand">POSET</div>
-                              <div class="product">Ticket Book</div>
-                              <div class="price">15,000</div>
-                         </div>
-                    </li>
+                         <li class="section2-slide">
+                              <div class="section2-slide-img-wrapper">
+                                   <a href="#">
+                                        <img src="/src/assets/images/이미지모음/메인섹션2/2바인더.jpg" alt="상품사진5"
+                                             class="section2-img">
+                                   </a>
+                                   <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
+                                             class="cart-icon2"></a>
+                              </div>
+                              <div class="section2-slide-text-wrapper">
+                                   <div class="brand">POSET</div>
+                                   <div class="product">Ticket Book</div>
+                                   <div class="price">15,000</div>
+                              </div>
+                         </li>
 
-                    <li class="section2-slide">
-                         <div class="section2-slide-img-wrapper">
-                              <a href="#">
-                                   <img src="/src/assets/images/이미지모음/메인섹션2/2스티커.jpg" alt="상품사진6" class="section2-img">
-                              </a>
-                              <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
-                                        class="cart-icon2"></a>
-                         </div>
-                         <div class="section2-slide-text-wrapper">
-                              <div class="brand">Sticky</div>
-                              <div class="product">Big Sticker Pack</div>
-                              <div class="price">5,000</div>
-                         </div>
-                    </li>
+                         <li class="section2-slide">
+                              <div class="section2-slide-img-wrapper">
+                                   <a href="#">
+                                        <img src="/src/assets/images/이미지모음/메인섹션2/2스티커.jpg" alt="상품사진6"
+                                             class="section2-img">
+                                   </a>
+                                   <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
+                                             class="cart-icon2"></a>
+                              </div>
+                              <div class="section2-slide-text-wrapper">
+                                   <div class="brand">Sticky</div>
+                                   <div class="product">Big Sticker Pack</div>
+                                   <div class="price">5,000</div>
+                              </div>
+                         </li>
 
-                    <li class="section2-slide">
-                         <div class="section2-slide-img-wrapper">
-                              <a href="#">
-                                   <img src="/src/assets/images/이미지모음/메인섹션2/2인덱스.jpg" alt="상품사진7" class="section2-img">
-                              </a>
-                              <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
-                                        class="cart-icon2"></a>
-                         </div>
-                         <div class="section2-slide-text-wrapper">
-                              <div class="brand">LETTER</div>
-                              <div class="product">인덱스 카드</div>
-                              <div class="price">1,500</div>
-                         </div>
-                    </li>
+                         <li class="section2-slide">
+                              <div class="section2-slide-img-wrapper">
+                                   <a href="#">
+                                        <img src="/src/assets/images/이미지모음/메인섹션2/2인덱스.jpg" alt="상품사진7"
+                                             class="section2-img">
+                                   </a>
+                                   <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
+                                             class="cart-icon2"></a>
+                              </div>
+                              <div class="section2-slide-text-wrapper">
+                                   <div class="brand">LETTER</div>
+                                   <div class="product">인덱스 카드</div>
+                                   <div class="price">1,500</div>
+                              </div>
+                         </li>
 
-                    <li class="section2-slide">
-                         <div class="section2-slide-img-wrapper">
-                              <a href="#">
-                                   <img src="/src/assets/images/이미지모음/메인섹션2/2데스크.jpg" alt="상품사진8" class="section2-img">
-                              </a>
-                              <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
-                                        class="cart-icon2"></a>
-                         </div>
-                         <div class="section2-slide-text-wrapper">
-                              <div class="brand">P.S.</div>
-                              <div class="product">desk 모음전</div>
-                              <div class="price">36,000 ~</div>
-                         </div>
-                    </li>
-                    
-               </ul>
+                         <li class="section2-slide">
+                              <div class="section2-slide-img-wrapper">
+                                   <a href="#">
+                                        <img src="/src/assets/images/이미지모음/메인섹션2/2데스크.jpg" alt="상품사진8"
+                                             class="section2-img">
+                                   </a>
+                                   <a href="#"><img src="/src/assets/images/icons/장바구니그레이.png" alt="장바구니아이콘"
+                                             class="cart-icon2"></a>
+                              </div>
+                              <div class="section2-slide-text-wrapper">
+                                   <div class="brand">P.S.</div>
+                                   <div class="product">desk 모음전</div>
+                                   <div class="price">36,000 ~</div>
+                              </div>
+                         </li>
+
+                    </ul>
                </div>
-               
-               <button type="button" class="main2-pre-button"><img src="/src/assets/images/icons/이전버튼.png" alt="이전버튼" class="sign-button-img"></button>
-               <button type="button" class="main2-next-button"><img src="/src/assets/images/icons/다음버튼.png" alt="다음버튼" class="sign-button-img"></button>
+
+               <button type="button" class="main2-pre-button"><img src="/src/assets/images/icons/이전버튼.png" alt="이전버튼"
+                         class="sign-button-img"></button>
+               <button type="button" class="main2-next-button"><img src="/src/assets/images/icons/다음버튼.png" alt="다음버튼"
+                         class="sign-button-img"></button>
           </section>
 
 
